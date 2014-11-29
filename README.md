@@ -56,6 +56,33 @@ For details see [soi-toolkit v1 Release Handling](https://code.google.com/p/soi-
 
 # Sample usage
 
+## Setup
+To be able to run the generators from the command prompt you only need Java SE / or later and Maven to be installed (as describen in the Installation Guide).
+
+The generators can be launched with the command:
+
+    mvn org.soitoolkit.tools.generator:soitoolkit-generator-maven-plugin:${version}:${generator-goal} -Darg1=value1 ...
+
+E.g.:
+
+    mvn org.soitoolkit.tools.generator:soitoolkit-generator-maven-plugin:0.4.1:genIC -DoutDir=ic1
+
+The generators can also be launched with a shorter command:
+
+    mvn soitoolkit-generator:${generator-goal}
+
+E.g.:
+
+    mvn soitoolkit-generator:genIC -DoutDir=ic1
+
+The shorter command-form requires that you have specified the following Plugin Group in your Maven `settings.xml`-file:
+
+    <pluginGroups>
+      <pluginGroup>org.soitoolkit.tools.generator</pluginGroup>
+    </pluginGroups>
+
+## Sample usage
+
     $ mvn org.soitoolkit.tools.generator:soitoolkit-generator-maven-plugin:2.0.0-M2-SNAPSHOT:genICV2
     $ cd sample1
     $ mvn org.soitoolkit.tools.generator:soitoolkit-generator-maven-plugin:2.0.0-M2-SNAPSHOT:genServiceV2
