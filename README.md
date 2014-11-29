@@ -10,10 +10,10 @@ For details see [soi-toolkit v1 Release Handling](https://code.google.com/p/soi-
 * Switch to the `master` branch
 * Merge develop to master... (using release branch in between?)
 * Manually update the soi-toolkit version to the release version in the following files:
- * Constant SOITOOLKIT_VERSION in tools/soitoolkit-generator/soitoolkit-generator/src/main/java/org/soitoolkit/tools/generator/model/impl/DefaultModelImpl.java
- * commons/poms/default-parent/pom.xml" --> "/ns:project/ns:properties/ns:soitoolkit.version"
-* Make sure the default Mule version for the Maven-generator plugin is among valid version in 
- * tools/soitoolkit-generator/soitoolkit-generator-maven-plugin/src/main/java/org/soitoolkit/tools/generator/maven/GenIntegrationComponentMojo.java
+ * Constant `SOITOOLKIT_VERSION` in `tools/soitoolkit-generator/soitoolkit-generator/src/main/java/org/soitoolkit/tools/generator/model/impl/DefaultModelImpl.java`
+ * `commons/poms/default-parent/pom.xml"` --> `"/ns:project/ns:properties/ns:soitoolkit.version"`
+* Make sure that the default Mule version for the Maven-generator plugin is up tp date in 
+ * `tools/soitoolkit-generator/soitoolkit-generator-maven-plugin/src/main/java/org/soitoolkit/tools/generator/maven/GenIntegrationComponentMojo.java`
 * `mvn clean test`
 * `git commit -m "Commit for releasing v0.4.0"`
 * `mvn release:clean release:prepare -DdryRun=true`
