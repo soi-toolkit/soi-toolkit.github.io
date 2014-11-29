@@ -7,6 +7,7 @@ GitHub Pages
 
 For details see [soi-toolkit v1 Release Handling](https://code.google.com/p/soi-toolkit/wiki/DG_ReleaseHandling).
 
+* Switch to the `master` branch
 * Merge develop to master... (using release branch in between?)
 * Manually update the soi-toolkit version to the release version in the following files:
  * Constant SOITOOLKIT_VERSION in tools/soitoolkit-generator/soitoolkit-generator/src/main/java/org/soitoolkit/tools/generator/model/impl/DefaultModelImpl.java
