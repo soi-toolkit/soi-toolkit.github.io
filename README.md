@@ -17,7 +17,7 @@ For details see [soi-toolkit v1 Release Handling](https://code.google.com/p/soi-
 * `mvn clean test`
 * `git commit -m "Commit for releasing v0.4.0"`
 * `mvn release:clean release:prepare -DdryRun=true`
-* `mvn release:prepare`
+* `mvn release:clean release:prepare`
 * `mvn release:perform`
 * Go to Sonatypes staging repository and release it to synch with maven central repo
  * Go to: https://oss.sonatype.org
