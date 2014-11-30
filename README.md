@@ -1,4 +1,4 @@
 soi-toolkit.github.io
 =====================
 
-See [Wiki](../../wiki/Home)
+Documentation: [Wiki](../../wiki/Home)
